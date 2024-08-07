@@ -1,0 +1,6 @@
+- name: install Docker and Jenkins on remote host
+  hosts: remote
+  gather_facts: true
+  roles:
+    - role: docker
+    - role: jenkins
